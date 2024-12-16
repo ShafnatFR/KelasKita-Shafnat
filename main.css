@@ -1,0 +1,122 @@
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 70px;
+    background-color:#B6252A;
+}
+
+.navbar .form-control {
+    width: 800px;
+    
+}
+
+.navbar-brand img {
+width: 60px;
+height: 40px;
+}
+
+a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: inherit; /* Mengambil warna teks dari elemen induknya */
+}
+a:hover {
+    text-decoration: none; /* Mencegah underline saat hover */
+    color: inherit; /* Mencegah perubahan warna saat hover */
+    cursor: default; /* Mengubah kursor menjadi default saat hover (opsional) */
+}
+
+li{
+    list-style: none;
+}
+
+.dropdown-menu.show {
+    box-shadow: none !important; /* Menghapus efek bayangan */
+}
+
+.carousel-inner {
+    height: 400px;
+    padding: 30px;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.carousel-container {
+    max-width: 1200px; 
+    margin: 0 auto;   
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+.carousel-control-prev {
+    color: rgb(0, 0, 0);
+}
+
+
+.carousel-control-next {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 14px;
+    }
+}
+

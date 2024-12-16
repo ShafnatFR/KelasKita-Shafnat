@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #B6252A;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 60px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .notification-icon img,
+  .refresh-icon img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-initials {
+    width: 30px;
+    height: 30px;
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-icon {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  /* Main Content */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background: linear-gradient(45deg, #7b5fb3, #1e016e);
+    height: 150px;
+    position: relative;
+  }
+  
+  .badge-custom {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #eaf0ff;
+    color: #6c7ae0;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .card-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .progress-bar-container {
+    height: 5px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff;
+  }
+  
+  .card-completion {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .view-course {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .view-course:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .header-right {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .profile-initials {
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .card-title {
+      font-size: 16px;
+    }
+  
+    .view-course {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .card-grid {
+      grid-template-columns: 1fr; /* Make cards stack vertically */
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .card-subtitle,
+    .card-info,
+    .card-completion {
+      font-size: 12px;
+    }
+  
+    .view-course {
+      padding: 6px 10px;
+      font-size: 10px;
+    }
+  }
+  
